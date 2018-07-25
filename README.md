@@ -1,6 +1,8 @@
 # Vue-element-login
 实现的简单的登录界面vue初学
+
 一、搭建vue+elementui写一个管理系统
+
 1.环境的配置
 
 (1)检查是否安装node.js.使用git命令(右击Git Bash Here) 输入node -v、返回版本号既是安装成功
@@ -39,31 +41,34 @@ vue init webpack-simple 工程名字<工程名字不能用中文>
 3.Git命令的常用命令：
 
 》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》
+
 二、普通项目搭建的步骤
+
 1.新建一个项目（新建文件夹demo）
+
 2.打开文件夹中，右键使用命令:vue init webpack demo(工程名必须英文)新建文件就新建完成。
+
 3.写一个登陆界面，在项目中新建page文件夹，dev本地运行，不是自己想要的效果就去配置路由的路径.
+
 4.在文件配置查看vue和路由的版本
+
 缺少哪些组件，在文件根目录下使用命令cnpm install axios --save  cnpm install element-ui --save
 
 5.app.vue的图片去掉，修改main.js
-6.在组件目录下创建一个Login.vue
 
+6.在组件目录下创建一个Login.vue
 
 7默认路径在路由router的index.js中配置，
 
 三、大概页面步骤（详细见二）
 
 四、一些小的知识点
+
 1、this.$router.replace('/login')与push()的区别：
 
 五、页面跳转的详细步骤（代码pln1）
+
 1.由Main.vue界面跳转到Login.vue界面
-
-
-
-
-
 
 
 
