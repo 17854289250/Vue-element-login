@@ -21,7 +21,7 @@ vue init webpack-simple 工程名字<工程名字不能用中文>
        Use sass 小颖的这个demo要用sass所以，小颖选的yes，大家可以根据自己的需求选择yes or no
 2.快捷键的使用
 
-(1)注释：c+s+/ 
+(1)注释：c+s+/
 (2)关键字查找：C+S+R
 (3)搜索：C+F
 3.Git命令的常用命令：
@@ -31,6 +31,7 @@ vue init webpack-simple 工程名字<工程名字不能用中文>
 2.打开文件夹中，右键使用命令:vue init webpack demo(工程名必须英文)新建文件就新建完成。
 3.写一个登陆界面，在项目中新建page文件夹，dev本地运行，不是自己想要的效果就去配置路由的路径.
 4.在文件配置查看vue和路由的版本
+
 缺少哪些组件，在文件根目录下使用命令cnpm install axios --save  cnpm install element-ui --save
 
 5.app.vue的图片去掉，修改main.js
