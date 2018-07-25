@@ -2,15 +2,22 @@
 实现的简单的登录界面vue初学
 一、搭建vue+elementui写一个管理系统
 1.环境的配置
+
 (1)检查是否安装node.js.使用git命令(右击Git Bash Here) 输入node -v、返回版本号既是安装成功
+
 (2)检查本地的npm版本：npm -v
+
 过低的话使用 npm install  -g npm
 安装的时候使用镜像
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 
+
 (3)全局安装webpack: npm inatall webpack -g
+
 (4)安装vue脚手架：npm install vue-cli  -g
+
 (5)创建空文件夹，根据模板创建项目
+
 vue init webpack-simple 工程名字<工程名字不能用中文>
              或者创建 vue1.0 的项目： vue init webpack-simple#1.0 工程名字<工程名字不能用中文>
              会有一些初始化的设置，如下输入:
@@ -21,10 +28,16 @@ vue init webpack-simple 工程名字<工程名字不能用中文>
        Use sass 小颖的这个demo要用sass所以，小颖选的yes，大家可以根据自己的需求选择yes or no
 2.快捷键的使用
 
-(1)注释：c+s+/ 
+
+(1)注释：c+s+/
+
 (2)关键字查找：C+S+R
+
 (3)搜索：C+F
+
+
 3.Git命令的常用命令：
+
 》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》
 二、普通项目搭建的步骤
 1.新建一个项目（新建文件夹demo）
