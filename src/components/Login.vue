@@ -9,8 +9,11 @@
         <el-input type="password" v-model="account.pwd" auto-complete="off" placeholder="密码"></el-input>
       </el-form-item>
       <el-checkbox checked class="remember">记住密码</el-checkbox>
-      <el-form-item  style="width:100%">
-<el-button type="primary" style="width:100%" @click="handleLogin">登录</el-button>
+      <el-form-item>
+<el-button type="primary" @click="handleLogin" :loading="logining">登录</el-button>
+        <el-button type="primary">
+          <router-link to="/">返回</router-link>
+        </el-button>
       </el-form-item>
     </el-form>
 </template>
@@ -19,10 +22,13 @@
   export default {
     name:'登录',
     data () {
-      //表单校验
+      //表单校验,默认的用户名，密码
       return {
         logining: false,
-        account: {},
+        account: {
+          username:'admin',
+          pwd:'123456'
+        },
         /*判断：如果用户没有输入用户名，提示“请输入账号”
       判断：如果用户没有输入密码，提示“请输入密码”用于表单验证*/
         rules: {
@@ -42,12 +48,15 @@
           if (valid) {
             if (this.account.username==='admin'&&this.account.pwd==='123456')
             {
-              this.$notify({
+              //dispatch采用Promise链式调用
+              this.$store.dispatch('handleLogin',this.account).then(()=>{
+                this.$notify({
                 type:'success',
                 message:'欢迎你，'+this.account.username+'!',
                 duration:3000
               })
-              this.$router.replace('/')
+              this.$router.push('/')
+              })
             }
             else {
               this.$message({

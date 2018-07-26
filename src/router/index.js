@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
 import Main from '@/components/Main.vue'
 import Login from '@/components/Login.vue'
 /*懒加载方式，当路由被访问的时候才加载对应的组件*/
@@ -19,5 +20,6 @@ export default new Router({
       name: 'Login',
       component: Login
     },
+
   ]
 })
